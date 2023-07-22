@@ -1,6 +1,6 @@
 'use client';
 
-import React, { useCallback, useState } from 'react';
+import React, { useCallback, useEffect, useState } from 'react';
 import useSWR from 'swr'
 
 import Home from './Home'
@@ -16,10 +16,12 @@ function HomeContainer() {
 
   const { data, isLoading } = useSWR(fetchQuestions ? ApiUrls.quiz(quizId) : null);
 
-  if(data) {
-    let questionId = data.questions.allIds[0] // Get First Question of Active Quiz
-    push(`/quizzes/${quizId}/questions/${questionId}`)
-  }
+  useEffect(() => {
+    if(data) {
+      let questionId = data.questions.allIds[0] // Get First Question of Active Quiz
+      push(`/quizzes/${quizId}/questions/${questionId}`)  
+    }
+  }, [data, quizId])
 
   const onStart = useCallback(() => {
     setFetchQuestions(true);
