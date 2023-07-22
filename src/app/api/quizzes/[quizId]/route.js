@@ -8,7 +8,7 @@ const data = {
         id: '1',
         name: 'Quiz',
         questions: {
-          allIds: ['1q1', '1q2', '1q3', '1q4', '1q5'],
+          allIds: ['1q1', '1q2', '1q3', '1q4'],
           byIds: {
             '1q1': {
               id: '1q1',
