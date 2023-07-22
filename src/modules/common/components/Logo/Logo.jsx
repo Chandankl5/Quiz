@@ -1,0 +1,17 @@
+import Image from 'next/image'
+import React from 'react';
+import logo from '../../../../../public/logo.png'
+
+
+function Logo() {
+  return (
+    <Image
+      src={logo}
+      alt='Logo'
+      width={145}
+      height={35}
+    />
+  )
+}
+
+export default Logo
