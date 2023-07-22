@@ -14,7 +14,7 @@ function HomeContainer() {
 
   const [ fetchQuestions, setFetchQuestions ] = useState(false);
 
-  const { data, isLoading,error } = useSWR(fetchQuestions ? ApiUrls.Questions(quizId) : null);
+  const { data, isLoading } = useSWR(fetchQuestions ? ApiUrls.quiz(quizId) : null);
 
   if(data) {
     let questionId = data.questions.allIds[0] // Get First Question of Active Quiz
