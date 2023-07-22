@@ -2,7 +2,7 @@ function apiHandler({ method, payload}) {
   return async function(url) {
     let request = new Request(url, {
       method,
-      body: payload
+      body: JSON.stringify(payload)
     });
 
     try {
