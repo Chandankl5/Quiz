@@ -7,3 +7,7 @@
   color: white;
   border: none;
 }
+
+.button:disabled {
+  opacity: 0.3;
+}
