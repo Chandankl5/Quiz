@@ -1,9 +1,16 @@
-import Image from 'next/image'
+'use client'
 
-export default function Quiz() {
+import { SWRConfig } from "swr";
+import { Home } from '@/modules/Questions/components/Home'
+import api from '@/modules/common/utils/api';
+
+export default function Quiz(c) {
+ 
   return (
     <div>
-      Question
+    <SWRConfig value={{fetcher: api.get(), revalidateOnMount: true}}>
+      <Home />
+      </SWRConfig>
     </div>
   )
 }
