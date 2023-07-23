@@ -1,0 +1,33 @@
+.option {
+  border-radius: 20px;
+  background: #F3F4FA;
+  padding: 30px 20px;
+  margin-bottom: 10px;
+  margin-top: 20px;
+}
+
+.optionSelected {
+  border-radius: 20px;
+  border: 4.444px solid #44B77B;
+  background: #FFF;
+}
+
+.radioVirtual {
+  width: 24px;
+  height: 24px;
+  margin-right: 15px;
+  display: inline-block;
+}
+
+.radioVirtualSelected {
+  fill: #44B77B;
+  width: 24px;
+  height: 24px;
+  margin-right: 15px;
+  display: inline-block;
+}
+
+.label {
+  font-size: 14px;
+  vertical-align: super;
+}
