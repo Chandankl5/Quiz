@@ -1,0 +1,38 @@
+.progressOuter {
+  background-color: white;
+  border-radius: 50%;
+  width: 125px;
+  height: 125px;
+}
+
+.progressInner {
+  border-radius: 50%;
+  width: 105px;
+  height: 105px;
+  position: relative;
+  top: 10px;
+  left: 10px;
+}
+
+.progressCore {
+  border-radius: 50%;
+  width: 88px;
+  height: 88px;
+  position: relative;
+  top: 8px;
+  left: 8px;
+  background: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.text {
+  font-size: 48px;
+  font-weight: bold;
+}
+
+.subText {
+  font-size: 16px;
+  color: #999999;
+}
