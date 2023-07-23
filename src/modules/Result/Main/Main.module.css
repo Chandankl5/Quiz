@@ -1,0 +1,96 @@
+.main {
+  padding: 10px 20px;
+  border-radius: 60px 60px 0px 0px;
+  background-color: white;
+  margin-top: -20px;
+  position: relative;
+}
+
+.itemValid {
+  padding-top: 24px;
+  padding-bottom: 24px;
+  background-color: #44B77B;
+  border-radius: 10px;
+  padding-left: 15px;
+}
+
+.itemInvalidCount, .itemValidCount {
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.itemInvalid {
+  padding-top: 24px;
+  padding-bottom: 24px;
+  border-radius: 10px;
+  background: #FF3B3F;
+  margin-top: 20px;
+  padding-left: 15px;
+}
+
+
+.meter {
+  width: 240px;
+  height: 120px;
+}
+
+.circleClip {
+  width: 215px;
+  height: 174px;
+  position: relative;
+  left: 12px;
+  margin-top: -124px;
+}
+
+.arrow {
+  margin-top: -110px;
+  left: -135px;
+  position: relative;
+  width: 80px;
+  height: 146px;
+}
+
+.scoreWrapper {
+  width: 160px;
+  height: 160px;
+  background-color: white;
+  margin-top: -122px;
+  position: relative;
+  left: 40px;
+  border-radius: 50%;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.meterWrapper {
+  position: relative;
+  left: 15%;
+}
+
+.score {
+  position: relative;
+  top: -100px;
+  left: 86px;
+  font-weight: bold;
+  font-size: 32px;
+}
+
+.headerText {
+  margin-bottom: 40px;
+  margin-top: 36px;
+  text-align: center;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.countText {
+  opacity: 0.5026041865348816;
+  margin-left: 10px;
+  font-weight: 600;
+}
+
+.ctaWrapper {
+  position: fixed;
+  width: 100%;
+  padding: 0 20px;
+  bottom: 20px;
+}
