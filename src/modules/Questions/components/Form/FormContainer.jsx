@@ -48,9 +48,14 @@ function FormContainer() {
     api.post(ApiUrls.questions(quizId, questionId), payload).then(() => {
       setIsSubmitApiLoading(false);
 
-      // Navigate to next question on Submit API success
-      push(`/quizzes/${quizId}/questions/${nextQuestionId}`)
-
+      // It was the last question, hence navigate to result page
+      if(!nextQuestionId) {
+        push(`/quizzes/${quizId}/result`)
+      }
+      else {
+        // Navigate to next question on Submit API success
+        push(`/quizzes/${quizId}/questions/${nextQuestionId}`)
+      }
     })
   }, [questionId, quizId, nextQuestionId, selectedOptions])
 
