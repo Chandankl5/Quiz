@@ -94,3 +94,33 @@
   padding: 0 20px;
   bottom: 20px;
 }
+
+/* breakpoint for tablets*/
+@media screen and (min-width: 481px) {
+  .meterWrapper {
+    left: 33%;
+  }
+
+  .circleClip {
+    left: -230px;
+    top: 55px;
+  }
+
+  .scoreWrapper {
+    top: 38px;
+  }
+
+  .arrow {
+    left: -375px;
+    top: 38px;
+  }
+
+  .itemValid {
+    margin-top: 28px;
+  }
+
+  .score {
+    top: -65px;
+    left: 92px;
+  }
+}
